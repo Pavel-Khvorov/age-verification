@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Age Verification</title>
+</head>
+<body>
+<div class="container">
+    <img src="main/resources/images/18plus.png" alt="18+" class="icon">
+    <h1>Укажите ваш возраст</h1>
+    <form action="/verify" method="POST">
+        <input type="date" name="birthDate" required>
+        <button type="submit">Confirm</button>
+    </form>
+    <p id="error" class="error-message"></p>
+</div>
+</body>
+</html>
